@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @shipratanvi43
+- 👋 Hi, I’m @shipa
 - 👀 I’m interested in coding 
 - 🌱 I’m currently learning web development 
 - 💞️ I’m looking to collaborate on codes 
