@@ -1,0 +1,19 @@
+'''Twisted Prime:A number is called a twisted prime number if it is a prime number and reverse of this number is also a prime number.
+Examples: 2, 3, 5, 7, 11, 13, 17, 31, 37, 71, 73, 79
+'''
+n=int(input("Enter a number:")) 
+num=n 
+rev=0
+f=0  
+while(n>0):  
+    d=n%10  
+    rev=rev*10+d  
+    n=n//10  
+for j in range(2,rev//2):  
+    if((rev % j)==0):  
+        f=1  
+        break  
+if f==0:  
+    print(num,"is a Twisted Prime")  
+else:  
+    print(num,"is not a Twisted Prime")  
