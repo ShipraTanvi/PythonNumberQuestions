@@ -1,0 +1,11 @@
+'''Fibonacci Series:In the Fibonacci sequence, 1st two number is 1 and 0. The Fibonacci sequence specifies a series of numbers
+where the next number is found by adding up the two numbers just before. 
+Example of the Fibonacci series is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... and so on.
+'''
+n=int(input("Enter the number of terms:"))
+a,b=0,1
+for i in range(0,n):
+    print(a,end=' ')
+    c=a+b
+    a=b
+    b=c
