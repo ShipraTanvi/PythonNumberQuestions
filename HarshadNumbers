@@ -1,0 +1,16 @@
+'''
+Harshad Number:If a number is divisible by the sum of its digits, then it will be known as a Harshad Number.
+For example:The number 156 is divisible by the sum (12) of its digits(1,5,6).
+Some Harshad numbers are 8, 54, 120, etc.
+'''
+n=int(input("Enter a number:"))
+num=n
+s=0
+while n>0:
+    r=n%10
+    s=s+r
+    n=n//10
+if num%s==0:
+    print(num,"is a Harshad Number")
+else:
+    print(num,"is not a Harshad Number")
