@@ -1,0 +1,19 @@
+'''Automorphic Number:A number is said to be an automorphic number if the last digits of the square of this number give the same number.
+for example: 25
+Yes, it is an automorphic number.
+The square of 25 gives 625, since the last digits are 25 it is an automorphic number.
+'''
+n=int(input("Enter a number:"))
+num=n
+sq=n*n
+f=0
+while n>0:
+    if n%10!=sq%10:
+        f=1
+        break
+    n=n//10
+    sq=sq//10
+if f==0:
+    print(num,"is an Automorphic Number")
+else:
+    print(num,"is not an Automorphic Number")
