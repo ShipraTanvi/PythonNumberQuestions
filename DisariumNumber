@@ -1,0 +1,23 @@
+'''Disarium Number:A number is said to be the Disarium number when the sum of its digit raised to the power of 
+their respective positions becomes equal to the number itself.
+For example, 175 is a Disarium number as follows:
+11+ 72 + 53 = 1+ 49 + 125 = 175
+'''
+n=int(input("Enter a number:"))
+num=n
+len=0
+while n>0:
+    len=len+1
+    n=n//10
+l=len
+s=0
+nu=num
+while num>0:
+    r=num%10
+    s=s+int(r**l)
+    num=num//10
+    l=l-1
+if s==nu:
+    print(nu,"is a Disarium Number.")
+else:
+    print(nu,"is not a Disarium Number.")
