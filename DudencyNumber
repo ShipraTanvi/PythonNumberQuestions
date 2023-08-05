@@ -1,0 +1,19 @@
+'''Dudency Number:A Dudeney number is a positive integer that is a perfect cube such that the sum of its decimal digits 
+is equal to the cube root of the number.
+Examples: 
+Input: N = 19683 
+Output: Yes 
+19683 = 273 and 1 + 9 + 6 + 8 + 3 = 27
+Input: N = 75742 
+Output: No 
+'''
+n=int(input("Enter a number"))
+temp=n
+sum=0
+while(temp>0):
+    sum+=(temp%10)
+    temp//=10
+if(n==(sum*sum*sum)):
+    print(n,"is a Dudeney Number")
+else:
+    print(n,"is not a Dudeney Number")
