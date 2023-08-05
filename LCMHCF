@@ -1,0 +1,25 @@
+#Input 2 numbers and display the GCD and LCM
+#lcm of two numbers
+a=int(input("Enter a number:"))
+b=int(input("Enter a number:"))
+if a>b:
+    lcm=a
+else:
+    lcm=b
+while True:
+    if lcm%a==0 and lcm%b==0:
+        break
+    else:
+        lcm=lcm+1
+print("LCM =",lcm)
+#gcd(hcf) of two numbers
+if a>b:
+    hcf=a
+else:
+    hcf=b
+while True:
+    if a%hcf==0 and b%hcf==0:
+        break
+    else:
+        hcf=hcf-1
+print("HCF =",hcf)
