@@ -1,0 +1,19 @@
+#Amicable pair:2 numbers are amicable when the sum of divisors of a number is equal to the other number
+'''x=220,y=284
+sum of factors of x-->y
+sum of factors of y-->x
+'''
+n1=int(input("Enter a number:"))
+n2=int(input("Enter another number:"))
+s1=0
+s2=0
+for i in range(1,n1):
+    if(n1%i==0):
+        s1+=i
+for i in range(1,n2):
+    if(n2%i==0):
+        s2+=i
+if(n1==s2 and n2==s1):
+    print(n1,"and",n2,"are Amicable pairs")
+else:
+    print(n1,"and",n2,"are not Amicable pairs")
