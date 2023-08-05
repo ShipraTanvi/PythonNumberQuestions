@@ -1,0 +1,29 @@
+'''Evil Number:An evil number is a non-negative number that has an even number of 1s in its binary expansion. 
+(Binary Expansion – is representation of a number in the binary numeral system or base-2 numeral system which represents 
+numeric values using two different symbols: typically 0 (zero) and 1 (one)).
+Examples :Input : 3
+Output : Evil Number
+Explanation: Binary expansion of 3 is 11,the number of 1s in this is 2 i.e even. 
+Input : 16
+Output : Odious Number(not an evil number)
+Explanation: Binary expansion of 16 = 10000, having number of 1s =1 i.e odd.
+Input : 23
+Output : Evil Number
+Explanation: Binary expansion of 23 is 10111,the number of 1s in this is 4 i.e even.
+'''
+n=int(input("Enter a number:"))
+num=n
+c=0
+p=0
+bin=0
+while n>0:
+    d=n%2
+    if d==1:
+        c=c+1
+    bin=bin+int(d*(10**p))
+    p=p+1
+    n=n//2
+if c%2==0:
+    print(num,"is an Evil Number")
+else:
+    print(num,"is not an Evil Number")
