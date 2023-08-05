@@ -1,0 +1,16 @@
+'''
+Armstrong Number:A positive integer is called an Armstrong number of order n if abcd... = an + bn + cn + dn + ... 
+In case of an Armstrong number of 3 digits, the sum of cubes of each digit is equal to the number itself.
+For example: 153 = 1*1*1 + 5*5*5 + 3*3*3 // 153 is an Armstrong number.
+'''
+n=int(input("Enter a number:"))
+num=n
+s=0
+while n>0:
+    r=n%10
+    s=s+r**3
+    n=n//10
+if num==s:
+    print(num,"is Armstrong Number")
+else:
+    print(num,"is not an Armstrong Number")
